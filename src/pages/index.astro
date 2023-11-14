@@ -1,16 +1,37 @@
 ---
-
+import Whatsapp from "../components/Whatsapp.astro";
+import Hero from "../components/Hero.astro";
+import Section1 from "../components/Section1.astro";
+import Aboutus from "../components/Aboutus.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!--Flowbite-->
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
+
+    <!--Animate CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Cabral Associados</title>
+  </head>
+  <body>
+    <Whatsapp />
+    <Hero />
+    <Section1 />
+    <Aboutus />
+    <Footer />
+  </body>
 </html>
