@@ -4,6 +4,7 @@ import Hero from "../components/Hero.astro";
 import Section1 from "../components/Section1.astro";
 import Aboutus from "../components/Aboutus.astro";
 import Footer from "../components/Footer.astro";
+import Navgation from "../components/Navgation.astro";
 ---
 
 <html lang="pt-br">
@@ -25,10 +26,50 @@ import Footer from "../components/Footer.astro";
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11430129656"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11430129656");
+    </script>
+
+    <!-- Event snippet for contato no whatsapp conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11430129656/Ms6wCO-tkP0YEPjfp8oq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
     <title>Cabral Associados</title>
   </head>
   <body>
     <Whatsapp />
+    <Navgation />
     <Hero />
     <Section1 />
     <Aboutus />

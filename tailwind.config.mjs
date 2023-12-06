@@ -16,6 +16,9 @@ module.exports = {
       backgroundImage: {
         "hero-bg": "url('/background-hero.jpg')",
       },
+      fontFamily: {
+        hedvig: ["Hedvig", "san-serif"],
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
