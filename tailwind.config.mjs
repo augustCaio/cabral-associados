@@ -9,12 +9,13 @@ module.exports = {
       colors: {
         whatsapp_green_primary: "#25D366",
         whatsapp_green_secondary: "#128C7E",
-        backdrop: "#730707",
+        backdrop: "#062b5b",
         primary_button: "#084DA6",
-        background: "#022859",
+        background: "#062b5b",
+        text_color: "#D6A90A",
       },
       backgroundImage: {
-        "hero-bg": "url('/background-hero.jpg')",
+        "hero-bg": "url('/logo.png')",
       },
       fontFamily: {
         hedvig: ["Hedvig", "san-serif"],
