@@ -15,7 +15,7 @@ module.exports = {
         text_color: "#D6A90A",
       },
       backgroundImage: {
-        "hero-bg": "url('/logo.png')",
+        "hero-bg": "url('/bg01.jpg')",
       },
       fontFamily: {
         hedvig: ["Hedvig", "san-serif"],
