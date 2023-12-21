@@ -2,6 +2,13 @@
   class="fixed bottom-0 right-0 p-4 bg-whatsapp_green_primary rounded-full m-[1rem] drop-shadow-lg animate-bounce z-50"
   onclick="gtag_report_conversion('https://wa.me/5581987661667')"
 >
+  <script>
+    var whatsapp = document.getElementById("whatsapp");
+    whatsapp.addEventListener("click", function () {
+      // Chame a função gtag_report_conversion ao clicar no botão
+      gtag_report_conversion("https://wa.me/5581987661667");
+    });
+  </script>
   <a
     href="https://wa.me/5581987661667"
     target="_blank"
